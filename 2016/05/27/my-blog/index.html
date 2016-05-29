@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion">
+<html class="theme-next muse use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -84,33 +84,30 @@
 
 
 
-<meta name="description" content="-1- 安装配置github配置SSH keys我们如何让本地git项目与远程的github建立联系呢？用SSH keys。
-检查SSH keys的设置首先我们需要检查你电脑上现有的ssh key：
-$ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory 说明你是第一次使用git。如果里面有文件说明只有配置过的，那么删除之前的。$ rm *
-生成">
+<meta name="description" content="-1- 安装配置github使用GitHub Pages建立博客GitHub Pages分两种，一种是你的GitHub用户名建立的username.github.io这样的用户、组织页（站），另一种是依附项目的pages。
+想建立个人博客是用的第一种，形如cnfeat.github.io这样的可访问的站，每个用户名下面只能建立一个。
+github上建立仓库登录后系统，在github首页，点击页面右">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo搭建Github静态博客">
+<meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2016/05/27/my-blog/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="-1- 安装配置github配置SSH keys我们如何让本地git项目与远程的github建立联系呢？用SSH keys。
-检查SSH keys的设置首先我们需要检查你电脑上现有的ssh key：
-$ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory 说明你是第一次使用git。如果里面有文件说明只有配置过的，那么删除之前的。$ rm *
-生成">
-<meta property="og:updated_time" content="2016-05-28T03:49:35.946Z">
+<meta property="og:description" content="-1- 安装配置github使用GitHub Pages建立博客GitHub Pages分两种，一种是你的GitHub用户名建立的username.github.io这样的用户、组织页（站），另一种是依附项目的pages。
+想建立个人博客是用的第一种，形如cnfeat.github.io这样的可访问的站，每个用户名下面只能建立一个。
+github上建立仓库登录后系统，在github首页，点击页面右">
+<meta property="og:updated_time" content="2016-05-29T08:32:07.248Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo搭建Github静态博客">
-<meta name="twitter:description" content="-1- 安装配置github配置SSH keys我们如何让本地git项目与远程的github建立联系呢？用SSH keys。
-检查SSH keys的设置首先我们需要检查你电脑上现有的ssh key：
-$ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory 说明你是第一次使用git。如果里面有文件说明只有配置过的，那么删除之前的。$ rm *
-生成">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="-1- 安装配置github使用GitHub Pages建立博客GitHub Pages分两种，一种是你的GitHub用户名建立的username.github.io这样的用户、组织页（站），另一种是依附项目的pages。
+想建立个人博客是用的第一种，形如cnfeat.github.io这样的可访问的站，每个用户名下面只能建立一个。
+github上建立仓库登录后系统，在github首页，点击页面右">
 
 
 
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"hide"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -120,7 +117,7 @@ $ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory �
   };
 </script>
 
-  <title> Hexo搭建Github静态博客 | Hexo </title>
+  <title>  | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -174,7 +171,7 @@ $ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory �
       
         
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
+          <a href="/首页" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -184,7 +181,7 @@ $ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory �
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+          <a href="/归档" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -193,12 +190,32 @@ $ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory �
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/分类" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Kategorien
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+          <a href="/标签" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/关于" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            Über
           </a>
         </li>
       
@@ -240,7 +257,7 @@ $ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory �
             
             
               
-                Hexo搭建Github静态博客
+                
               
             
           </h1>
@@ -280,10 +297,16 @@ $ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory �
       
 
       
-        <h2 id="1-安装配置github"><a href="#1-安装配置github" class="headerlink" title="-1- 安装配置github"></a>-1- 安装配置github</h2><h5 id="配置SSH-keys"><a href="#配置SSH-keys" class="headerlink" title="配置SSH keys"></a>配置SSH keys</h5><p>我们如何让本地git项目与远程的github建立联系呢？用SSH keys。</p>
-<h5 id="检查SSH-keys的设置"><a href="#检查SSH-keys的设置" class="headerlink" title="检查SSH keys的设置"></a>检查SSH keys的设置</h5><p>首先我们需要检查你电脑上现有的ssh key：</p>
-<p><code>$ cd ~/. ssh 检查本机的ssh密钥</code><br>如果提示：No such file or directory 说明你是第一次使用git。<br>如果里面有文件说明只有配置过的，那么删除之前的。<br><code>$ rm *</code></p>
-<h5 id="生成新的SSH-Key："><a href="#生成新的SSH-Key：" class="headerlink" title="生成新的SSH Key："></a>生成新的SSH Key：</h5><p><code>$ ssh-keygen  -t rsa -C &quot;邮件地址@youremail.com&quot;</code><br><code>Generating public/private rsa key pair.</code><br><code>Enter file in which to save the key</code> <code>(/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;</code><br>这里建议使用你的<code>github</code>邮箱。<br>然后系统会要你输入密码：<br><code>Enter passphrase (empty for no passphrase):&lt;输入加密串&gt;</code><br><code>Enter same passphrase again:&lt;再次输入加密串&gt;</code><br>在回车中会提示你输入一个密码，这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入。这个设置是防止别人往你的项目里提交内容。</p>
+        <h2 id="1-安装配置github"><a href="#1-安装配置github" class="headerlink" title="-1- 安装配置github"></a>-1- 安装配置github</h2><h3 id="使用GitHub-Pages建立博客"><a href="#使用GitHub-Pages建立博客" class="headerlink" title="使用GitHub Pages建立博客"></a>使用GitHub Pages建立博客</h3><p>GitHub Pages分两种，一种是你的GitHub用户名建立的username.github.io这样的用户、组织页（站），另一种是依附项目的pages。</p>
+<p>想建立个人博客是用的第一种，形如cnfeat.github.io这样的可访问的站，每个用户名下面只能建立一个。</p>
+<p>github上建立仓库<br>登录后系统，在github首页，点击页面右下角「New Repository」<br>填写项目信息：<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">project name：kealqqq.github.<span class="built_in">io</span></span><br></pre></td></tr></table></figure></p>
+<p>这里注意Github Pages的Repository名字是特定的，比如我Github账号是<code>kealqqq</code>，那么我<code>Github Pages Repository</code>名字就是<strong><code>kealqqq.github.io</code></strong>。<br>点击「Create Repository」 完成创建。</p>
+<h3 id="配置SSH-keys"><a href="#配置SSH-keys" class="headerlink" title="配置SSH keys"></a>配置SSH keys</h3><p>我们如何让本地git项目与远程的github建立联系呢？用SSH keys。</p>
+<h5 id="检查SSH-keys的设置"><a href="#检查SSH-keys的设置" class="headerlink" title="检查SSH keys的设置"></a>检查SSH keys的设置</h5><p>首先我们需要检查你电脑上现有的ssh key：<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/. ssh 检查本机的ssh密钥</span><br></pre></td></tr></table></figure></p>
+<p>如果提示：No such file or directory 说明你是第一次使用git。<br>如果里面有文件说明只有配置过的，那么删除之前的。<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ rm *</span><br></pre></td></tr></table></figure></p>
+<h5 id="生成新的SSH-Key："><a href="#生成新的SSH-Key：" class="headerlink" title="生成新的SSH Key："></a>生成新的SSH Key：</h5><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen  -t rsa -C <span class="string">"kealqqq @gmail.com"</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> which to save the key (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;</span><br></pre></td></tr></table></figure>
+<p>这里建议使用你的<code>github</code>邮箱。<br>然后系统会要你输入密码:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):&lt;输入加密串&gt;</span><br><span class="line">Enter same passphrase again:&lt;再次输入加密串&gt;</span><br></pre></td></tr></table></figure></p>
+<p>在回车中会提示你输入一个密码，这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入。这个设置是防止别人往你的项目里提交内容。</p>
 <blockquote>
 <p><strong>NOTE：</strong> 输入密码的时候没有*字样的，你直接输入就可以了。</p>
 </blockquote>
@@ -291,15 +314,13 @@ $ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory �
 <p>1、打开本地C:\Documents and Settings\Administrator.ssh\id_rsa.pub文件。此文件里面内容为刚才生成人密钥。如果看不到这个文件，你需要设置显示隐藏文件。准确的复制这个文件的内容，才能保证设置的成功。</p>
 <p>2、登陆github系统。点击右上角的 Account Settings—&gt;SSH Public keys —&gt; add another public keys</p>
 <p>3、把你本地生成的密钥复制到里面（key文本框中）， 点击 add key 就ok了</p>
-<h5 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h5><p>可以输入下面的命令，看看设置是否成功，git@github.com的部分不要修改：</p>
-<p><code>$ ssh -T git@github.com</code><br>如果是下面的反馈：</p>
-<p><code>The authenticity of host &#39;github.com (207.97.227.239)&#39; can&#39;t be established.</code><br><code>RSA key fingerprint is</code> <code>16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</code><br><code>Are you sure you want to continue connecting (yes/no)?</code><br>不要紧张，输入yes就好，然后会看到：</p>
-<p><code>Hi cnfeat! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code></p>
+<h5 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h5><p>可以输入下面的命令，看看设置是否成功，git@github.com的部分不要修改：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
+<p>如果是下面的反馈：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">`The authenticity of host 'github.com (207.97.227.239)' can't be established.`</span><br><span class="line">`RSA key fingerprint is` `16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.`</span><br><span class="line">`Are you sure you want to continue connecting (yes/no)?`</span><br><span class="line">不要紧张，输入yes就好，然后会看到：</span><br><span class="line">`Hi cnfeat! You've successfully authenticated, but GitHub does not provide shell access.`</span><br></pre></td></tr></table></figure></p>
 <h5 id="设置用户信息"><a href="#设置用户信息" class="headerlink" title="设置用户信息"></a>设置用户信息</h5><p>现在你已经可以通过SSH链接到GitHub了，还有一些个人信息需要完善的。</p>
 <p>Git会根据用户的名字和邮箱来记录提交。GitHub也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的，名字必须是你的真名，而不是GitHub的昵称。</p>
 <p><code>$ git config --global user.name &quot;cnfeat&quot;//git用户名</code><br><code>$ git config --global user.email  &quot;cnfeat@gmail.com&quot;//填写自己的邮箱</code><br>SSH Key配置成功<br>本机已成功连接到github。</p>
 <blockquote>
-<p><strong>NOTE:</strong> 这里会遇到Permission denied (publickey)问题，可以参考<a href="http://blog.itpub.net/25851087/viewspace-1262468/" target="_blank" rel="external">http://blog.itpub.net/25851087/viewspace-1262468/</a> 解决。<br>具体我用的方法是，将SSH配置文件<code>ssh_config</code>在自己本地的路径：<br>    <code>C:\Users\Administrator\AppData\Local\GitHub\PortableGit_*\etc\ssh</code>目录下面的，<code>ssh_config</code>配置文件中的<code>IdentityFile</code>的值改为<code>~/.ssh/id_rsa</code></p>
+<p><strong>NOTE:</strong> 这里会遇到Permission denied (publickey)问题。<br>可以参考<a href="http://blog.itpub.net/25851087/viewspace-1262468/" target="_blank" rel="external">http://blog.itpub.net/25851087/viewspace-1262468/</a> 解决。<br>具体我用的方法是，将SSH配置文件<code>ssh_config</code>在自己本地的路径：<br>    <code>C:\Users\Administrator\AppData\Local\GitHub\PortableGit_*\etc\ssh</code>目录下面的，<code>ssh_config</code>配置文件中的<code>IdentityFile</code>的值改为<code>~/.ssh/id_rsa</code></p>
 </blockquote>
 <h2 id="2-安装node-js"><a href="#2-安装node-js" class="headerlink" title="-2-安装node.js"></a>-2-安装node.js</h2><p><a href="http://nodejs.org/download/" target="_blank" rel="external">http://nodejs.org/download/</a><br>安装时直接保持默认配置即可</p>
 <h2 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="-3-安装Hexo"></a>-3-安装Hexo</h2><p>打开Git命令行，执行如下命令<br><code>$ npm install -g hexo</code><br>在电脑中建立一个名字叫「Hexo」的文件夹（比如我建在了D:\Hexo），然后在此文件夹中右键打开Git Bash，执行下面的命令。<br><code>$ hexo init</code><br>Hexo随后会自动在目标文件夹建立网站所需要的文件。然后按照提示，在 <code>D:/Hexo</code>下执行<br><code>$ npm install</code><br>会在<code>D:\Hexo</code>目录中安装 <code>node_modules</code>。</p>
@@ -313,9 +334,9 @@ $ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory �
 <p>执行下面的命令，将markdown文件生成静态网页。<br><code>$ hexo generate</code><br>该命令执行完后，会在 D:\Hexo\public\ 目录下生成一系列html，css等文件。</p>
 <h5 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h5><p><code>hexo new &quot;My New Post&quot;</code>会在<code>D:\Hexo\source\_posts</code>目录下生成一个markdown文件：<code>My-New-Post.md</code></p>
 <p>可以使用一个支持markdown语法的编辑器来编辑该文件。</p>
-<h5 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h5><p>部署到Github前需要配置_config.yml文件，首先找到下面的内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: http://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type:</span><br></pre></td></tr></table></figure></p>
+<h5 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h5><p>部署到Github前需要配置_config.yml文件，首先找到下面的内容<br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: http://hexo.<span class="built_in">io</span>/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>:</span><br></pre></td></tr></table></figure></p>
 <p>然后将它们修改为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: http://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git   #注意这里必须修改成为git 而不是github</span><br><span class="line">  repository: git@github.com:zhchnchn/zhchnchn.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: http://hexo.<span class="built_in">io</span>/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git   #注意这里必须修改成为git 而不是github</span><br><span class="line">  repository: git@github.com:zhchnchn/zhchnchn.github.<span class="built_in">io</span>.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <h5 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h5><p>每次部署的步骤，可按以下三步来进行。</p>
 <p><code>$ hexo clean</code><br><code>$ hexo generate</code><br><code>$ hexo deploy</code></p>
 <blockquote>
@@ -341,20 +362,6 @@ $ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory �
     <footer class="post-footer">
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/05/27/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
 
       
@@ -412,14 +419,14 @@ $ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory �
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
-               alt="John Doe" />
-          <p class="site-author-name" itemprop="name">John Doe</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+               alt="kealqqq" />
+          <p class="site-author-name" itemprop="name">kealqqq</p>
+          <p class="site-description motion-element" itemprop="description">JUST A BLOG!</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">2</span>
+            <a href="/归档">
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">Artikel</span>
             </a>
           </div>
@@ -451,7 +458,7 @@ $ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory �
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装配置github"><span class="nav-number">1.</span> <span class="nav-text">-1- 安装配置github</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#配置SSH-keys"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">配置SSH keys</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#检查SSH-keys的设置"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">检查SSH keys的设置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#生成新的SSH-Key："><span class="nav-number">1.0.0.3.</span> <span class="nav-text">生成新的SSH Key：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#添加SSH-Key到GitHub"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">添加SSH Key到GitHub</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#测试"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">测试</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#设置用户信息"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">设置用户信息</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装node-js"><span class="nav-number">2.</span> <span class="nav-text">-2-安装node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-安装Hexo"><span class="nav-number">3.</span> <span class="nav-text">-3-安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#建立新的静态页面"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">建立新的静态页面</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#编辑文章"><span class="nav-number">3.0.0.2.</span> <span class="nav-text">编辑文章</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#部署到Github"><span class="nav-number">3.0.0.3.</span> <span class="nav-text">部署到Github</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#部署步骤"><span class="nav-number">3.0.0.4.</span> <span class="nav-text">部署步骤</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装配置github"><span class="nav-number">1.</span> <span class="nav-text">-1- 安装配置github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用GitHub-Pages建立博客"><span class="nav-number">1.1.</span> <span class="nav-text">使用GitHub Pages建立博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置SSH-keys"><span class="nav-number">1.2.</span> <span class="nav-text">配置SSH keys</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#检查SSH-keys的设置"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">检查SSH keys的设置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#生成新的SSH-Key："><span class="nav-number">1.2.0.2.</span> <span class="nav-text">生成新的SSH Key：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#添加SSH-Key到GitHub"><span class="nav-number">1.2.0.3.</span> <span class="nav-text">添加SSH Key到GitHub</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#测试"><span class="nav-number">1.2.0.4.</span> <span class="nav-text">测试</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#设置用户信息"><span class="nav-number">1.2.0.5.</span> <span class="nav-text">设置用户信息</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装node-js"><span class="nav-number">2.</span> <span class="nav-text">-2-安装node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-安装Hexo"><span class="nav-number">3.</span> <span class="nav-text">-3-安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#建立新的静态页面"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">建立新的静态页面</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#编辑文章"><span class="nav-number">3.0.0.2.</span> <span class="nav-text">编辑文章</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#部署到Github"><span class="nav-number">3.0.0.3.</span> <span class="nav-text">部署到Github</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#部署步骤"><span class="nav-number">3.0.0.4.</span> <span class="nav-text">部署步骤</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
@@ -484,7 +491,7 @@ $ cd ~/. ssh 检查本机的ssh密钥如果提示：No such file or directory �
 <div class="theme-info">
   Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Muse
   </a>
 </div>
 
